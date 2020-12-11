@@ -1,3 +1,4 @@
+{{- if .Values.tests.enabled }}
 ---
 apiVersion: v1
 kind: Pod
@@ -85,3 +86,4 @@ spec:
   volumes:
   - emptyDir: {}
     name: zookeeper
+{{- end}}
